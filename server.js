@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 // server.js
-var express = require('express');
-var path = require('path');
-var serveStatic = require('serve-static');
+import express from "express";
+import path from "path";
+import serveStatic from "serveStatic";
 app = express();
 app.use(serveStatic(__dirname + "/dist"));
 var port = process.env.PORT || 5000;

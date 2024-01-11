@@ -14,21 +14,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500&family=Exo+2:wght@600;700&display=swap" rel="stylesheet">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1NBGHBKHN"></script> 
-    <script> 
-      window.dataLayer = window.dataLayer || []; 
-      function gtag(){dataLayer.push(arguments);} 
-      gtag('js', new Date()); 
-      gtag('config', 'G-N1NBGHBKHN', { 
-        'page_title' : 'Ethical Bot', 
-        'page_path': '/' 
-      }); 
-    </script>
 </head>
 
 <body class="font-content antialiased text-gray-700 overflow-x-hidden relative">
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    <script type="module">
+      import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+      console.log('CHATBOT', Chatbot)
+      window.chatbot = Chatbot;
+    </script>
 </body>
 
 </html>

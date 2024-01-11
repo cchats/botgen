@@ -28,10 +28,6 @@
                 <ul class="space-x-10 font-theme-heading font-medium items-center hidden md:flex  flex-col space-y-7 md:space-y-0 md:flex-row">
                     <li class="uppercase hover:text-theme-secondary transition duration-200"><a href="#features" v-smooth-scroll>Features</a></li>
                     <li class="uppercase hover:text-theme-secondary transition duration-200"><a href="#faq" v-smooth-scroll>FAQ</a></li>
-                    <li class="uppercase hover:text-theme-secondary transition duration-200"><a href="#subscribe" v-smooth-scroll>Subscribe</a></li>
-                    <li class="uppercase bg-theme-secondary px-6 py-2 text-white rounded shadow-md hover:bg-white border-2 border-transparent hover:border-theme-secondary hover:text-theme-secondary cursor-pointer transition duration-200">
-                        <a href="#download-section" v-smooth-scroll>Download</a>
-                    </li>
                 </ul>
             </nav>
         </header>
@@ -53,12 +49,6 @@
                     </li>
                     <li class="hover:text-theme-secondary transition duration-200 py-4 border-b border-theme-grayish-blue w-full text-center">
                         <a  @click="toggleMobileNav()" href="#faq">FAQ</a>
-                    </li>
-                    <li class="hover:text-theme-secondary transition duration-200 py-4 border-b border-theme-grayish-blue w-full text-center">
-                        <a  @click="toggleMobileNav()" href="#subscribe">Subscribe</a>
-                    </li>
-                    <li class="bg-transparent border-2 rounded px-6 py-2 mt-6 w-full text-center cursor-pointer hover:text-theme-secondary transition duration-200">
-                        <a  @click="toggleMobileNav()" href="#download-section">Download</a>
                     </li>
                 </ul>
                 <div class="flex justify-center items-end h-52">

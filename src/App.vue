@@ -4,11 +4,16 @@ import Header from './layouts/Header.vue';
 import Main from './layouts/Main.vue';
 import Footer from './layouts/Footer.vue';
 import flowise from "./data/flowise";
-import { onMounted } from "vue"
+import { onMounted, watch } from "vue"
 
 onMounted(() => {
-    console.log('flowise', flowise)
-})
+    const chatBotInterval = setInterval(() => {
+        if (window.chatbot) {
+            window.chatbot.init(flowise);
+            clearInterval(chatBotInterval);
+        }
+    }, 100);
+});
 
 </script>
 
