@@ -1,6 +1,6 @@
 const config = {
-  chatflowid: process.env.VUE_APP_CHAT_FLOW_ID,
-  apiHost: process.env.VUE_APP_API_HOST,
+  // chatflowid: process.env.VUE_APP_CHAT_FLOW_ID,
+  // apiHost: process.env.VUE_APP_API_HOST,
   chatflowConfig: {
       // topK: 2
   },
