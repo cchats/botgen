@@ -3,9 +3,9 @@
 // server.js
 import express from "express";
 import path from "path";
-import serveStatic from "serveStatic";
-app = express();
-app.use(serveStatic(__dirname + "/dist"));
+import serveStatic from "serve-static";
+const app = express();
+app.use(serveStatic(path.resolve() + "/dist"));
 var port = process.env.PORT || 5000;
 app.listen(port);
 console.log('server started '+ port);
